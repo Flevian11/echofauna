@@ -248,6 +248,7 @@
       cursor: pointer;
       transition: all 0.3s ease;
       border: none;
+      z-index: 10;
     }
     
     .sound-btn:hover {
@@ -265,6 +266,7 @@
       padding: 20px;
       transform: translateY(100%);
       transition: transform 0.3s ease;
+      z-index: 5;
     }
     
     .card:hover .species-info {
@@ -448,6 +450,34 @@
       transform: translateX(0);
     }
 
+    /* Enhanced hover effects */
+    .card-hover-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(2,8,14,0.85);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+      z-index: 2;
+    }
+    
+    .card:hover .card-hover-content {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .card:hover .meta {
+      opacity: 0;
+    }
+
   </style>
 </head>
 <body>
@@ -560,13 +590,15 @@
             <button class="sound-btn" data-species="dodo">
               <i class="fas fa-volume-up"></i>
             </button>
+            <div class="card-hover-content">
+              <h4 style="color:var(--accent); margin-bottom:10px">Dodo</h4>
+              <p style="text-align:center; font-size:14px; line-height:1.4">Flightless bird that inhabited Mauritius. Went extinct due to human activity and introduced species in the late 17th century.</p>
+              <button class="btn" style="margin-top:15px; font-size:12px">Learn More</button>
+            </div>
           </div>
           <div class="meta">
             <h4>Dodo</h4>
             <p>End of 17th C — Mauritius</p>
-          </div>
-          <div class="species-info">
-            <p style="font-size:12px;margin:0">Flightless bird that inhabited Mauritius. Went extinct due to human activity and introduced species.</p>
           </div>
         </article>
 
@@ -576,29 +608,33 @@
             <button class="sound-btn" data-species="pigeon">
               <i class="fas fa-volume-up"></i>
             </button>
+            <div class="card-hover-content">
+              <h4 style="color:var(--accent); margin-bottom:10px">Passenger Pigeon</h4>
+              <p style="text-align:center; font-size:14px; line-height:1.4">Once the most abundant bird in North America, hunted to extinction in the early 20th century. Flocks could darken the sky for days.</p>
+              <button class="btn" style="margin-top:15px; font-size:12px">Learn More</button>
+            </div>
           </div>
           <div class="meta">
             <h4>Passenger Pigeon</h4>
             <p>1914 — North America</p>
           </div>
-          <div class="species-info">
-            <p style="font-size:12px;margin:0">Once the most abundant bird in North America, hunted to extinction in the early 20th century.</p>
-          </div>
         </article>
 
         <article class="card">
           <div class="img">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Thylacine.jpg/640px-Thylacine.jpg" alt="Tasmanian tiger reconstruction" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tasmanian tiger reconstruction" loading="lazy">
             <button class="sound-btn" data-species="tiger">
               <i class="fas fa-volume-up"></i>
             </button>
+            <div class="card-hover-content">
+              <h4 style="color:var(--accent); margin-bottom:10px">Tasmanian Tiger</h4>
+              <p style="text-align:center; font-size:14px; line-height:1.4">Carnivorous marsupial native to Tasmania. The last known specimen died in Hobart Zoo in 1936. Known for its distinctive striped back.</p>
+              <button class="btn" style="margin-top:15px; font-size:12px">Learn More</button>
+            </div>
           </div>
           <div class="meta">
             <h4>Tasmanian Tiger</h4>
             <p>1936 — Australia</p>
-          </div>
-          <div class="species-info">
-            <p style="font-size:12px;margin:0">Carnivorous marsupial native to Tasmania, New Guinea, and Australia. Last known specimen died in Hobart Zoo.</p>
           </div>
         </article>
       </div>
@@ -1089,7 +1125,7 @@
       `;
     })();
 
-    /* =========== Enhanced Story Carousel =========== */
+    /* =========== Fixed Story Carousel =========== */
     (function(){
       const scenes = document.querySelectorAll('.story-scene');
       const dots = document.querySelectorAll('.story-dot');
@@ -1146,8 +1182,7 @@
       function startAutoAdvance() {
         if (autoAdvance) {
           autoAdvanceInterval = setInterval(() => {
-            currentScene = (currentScene + 1) % scenes.length;
-            setScene(currentScene);
+            setScene((currentScene + 1) % scenes.length);
           }, 5000);
         }
       }
@@ -1284,7 +1319,7 @@
           } else if (keyword.includes('pigeon') || keyword.includes('bird') || keyword.includes('flock')) {
             imageUrl = 'https://images.unsplash.com/photo-1522926193341-e9ffd686c60f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80';
           } else if (keyword.includes('tiger') || keyword.includes('thylacine') || keyword.includes('marsupial')) {
-            imageUrl = 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Thylacine.jpg/640px-Thylacine.jpg';
+            imageUrl = 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80';
           } else if (keyword.includes('mammoth') || keyword.includes('woolly') || keyword.includes('elephant')) {
             imageUrl = 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80';
           } else if (keyword.includes('sabertooth') || keyword.includes('saber') || keyword.includes('cat')) {
@@ -1294,7 +1329,6 @@
             const fallbacks = [
               'https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
               'https://images.unsplash.com/photo-1522926193341-e9ffd686c60f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-              'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Thylacine.jpg/640px-Thylacine.jpg',
               'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
             ];
             imageUrl = fallbacks[Math.floor(Math.random() * fallbacks.length)];
