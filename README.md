@@ -16,7 +16,7 @@ CTAs: Explore the Archive | Revive with Us
 
 Parallax-triggered transformation animation
 
-2. About Us – Our Mission
+### 2. About Us – Our Mission
 
 Split-screen design:
 Left → Mission text
@@ -25,7 +25,7 @@ Message:
 
 “We fuse art, science, and AI to digitally reconstruct extinct species — a call to protect what remains.”
 
-3. Holographic Archive (Interactive Globe)
+### 3. Holographic Archive (Interactive Globe)
 
 3D rotating Earth
 
@@ -37,7 +37,7 @@ Click = zoom into species preview
 
 Tagline: “Travel across time and space. Explore the lost voices of Earth.”
 
-4. Featured Species Carousel
+### 4. Featured Species Carousel
 
 AI 3D rotating models
 
@@ -47,13 +47,13 @@ Micro soundscapes
 
 CTA: View Full Archive →
 
-5. Immersive Storytelling Experience
+### 5. Immersive Storytelling Experience
 
 A scroll-based cinematic story:
 Natural habitat → decline → extinction → AI revival.
 Dynamic music shifts per stage.
 
-6. AI Lab Playground
+### 6. AI Lab Playground
 
 A futuristic console where users can:
 
@@ -64,7 +64,7 @@ Upload prompts or sketches
 Generate speculative reconstructions
 CTA: Try the AI Lab →
 
-7. Ecosystem Simulator
+### 7. Ecosystem Simulator
 
 A living biome that populates with every species explored.
 Gamified progress:
@@ -73,7 +73,7 @@ Gamified progress:
 
 CTA: Repopulate the Archive →
 
-8. Conservation & Action Hub
+### 8. Conservation & Action Hub
 
 Cards for:
 
@@ -87,7 +87,7 @@ Awareness messages
 
 CTA: Take Action →
 
-9. Community Contributions
+### 9. Community Contributions
 
 Gallery of user-submitted:
 
@@ -99,7 +99,7 @@ Research snippets
 
 CTA: Submit Your Contribution →
 
-10. Footer – Contact & Partnerships
+### 10. Footer – Contact & Partnerships
 
 Dark slate animated with neural network lines.
 Includes:
@@ -110,7 +110,7 @@ Quick navigation links
 
 Partner organizations (NGOs, universities, AI labs)
 
-#🎨 Design System
+### 🎨 Design System
 Color Palette
 
 Dark slate – primary
@@ -123,13 +123,13 @@ Fossil white – text
 
 Amber/rust gold – accents
 
-#Typography
+### Typography
 
 Orbitron / Exo – futuristic headings
 
 Spectral / Lora – elegant serif body
 
-Animations
+### Animations
 
 Scroll-triggered fossil morphs
 
@@ -137,7 +137,7 @@ Particle → pixel transitions
 
 Holographic glows
 
-🛠️ Tech Stack (Suggested)
+### 🛠️ Tech Stack 
 
 HTML5, CSS3, JavaScript (ES6+)
 
@@ -152,7 +152,7 @@ WebGL shaders (glow + particle effects)
 AI model integration (future phase)
 
 
-🚀 Roadmap
+### 🚀 Roadmap
 
  Build Hero fossil-to-animal animation
 
@@ -168,7 +168,7 @@ AI model integration (future phase)
 
  Add conservation action APIs
 
-👥 Contributors
+### 👥 Contributors
 
 Tech Ghost – Lead Developer, Creative Direction
 
