@@ -3,13 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EchoFauna — Reviving the Voices of the Extinct</title>
-  <meta name="description" content="EchoFauna — an AI-powered archive that reconstructs extinct animals with art, science and immersive tech." />
+  
+  <!-- Primary Meta Tags -->
+  <title>EchoFauna — Reviving the Voices of the Extinct | AI-Powered Species Reconstruction</title>
+  <meta name="description" content="EchoFauna blends AI technology, scientific research, and community knowledge to digitally reconstruct extinct animals. Explore holographic archives, immersive stories, and help preserve biodiversity." />
+  <meta name="keywords" content="extinct animals, AI reconstruction, digital conservation, biodiversity, holographic archive, species revival, paleontology, wildlife preservation" />
+  <meta name="author" content="EchoFauna" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://echofauna.com/" />
+  <meta property="og:title" content="EchoFauna — Reviving the Voices of the Extinct" />
+  <meta property="og:description" content="AI-powered digital reconstruction of extinct species. Explore holographic archives and immersive stories of lost wildlife." />
+  <meta property="og:image" content="https://echofauna.com/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="EchoFauna" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://echofauna.com/" />
+  <meta property="twitter:title" content="EchoFauna — Reviving the Voices of the Extinct" />
+  <meta property="twitter:description" content="AI-powered digital reconstruction of extinct species. Explore holographic archives and immersive stories." />
+  <meta property="twitter:image" content="https://echofauna.com/images/twitter-image.jpg" />
+  
+  <!-- Additional SEO Meta Tags -->
+  <meta name="theme-color" content="#06f7ff" />
+  <meta name="msapplication-TileColor" content="#0f1720" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "EchoFauna",
+    "url": "https://echofauna.com",
+    "logo": "https://echofauna.com/images/logo.png",
+    "description": "AI-powered digital reconstruction of extinct species and biodiversity conservation",
+    "sameAs": [
+      "https://twitter.com/echofauna",
+      "https://instagram.com/echofauna",
+      "https://youtube.com/echofauna",
+      "https://github.com/echofauna"
+    ],
+    "foundingDate": "2024",
+    "areaServed": "Global"
+  }
+  </script>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <!-- Preload Critical Resources -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
+  
+  <!-- Fonts and Styles -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Spectral:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/examples/js/controls/OrbitControls.min.js"></script>
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://echofauna.com" />
   <style>
     /* =========== Base / Reset =========== */
     :root{
@@ -191,46 +249,6 @@
       text-align: center;
       padding: 20px;
     }
-    
-    .search-results {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      margin-top: 15px;
-      max-height: 200px;
-      overflow-y: auto;
-    }
-    
-    .search-result {
-      border-radius: 8px;
-      overflow: hidden;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-      border: 1px solid rgba(255,255,255,0.05);
-    }
-    
-    .search-result:hover {
-      transform: scale(1.05);
-      border-color: var(--accent);
-    }
-    
-    .search-result img {
-      width: 100%;
-      height: 80px;
-      object-fit: cover;
-    }
-
-    /* Morphing animation for hero */
-    .morph-path {
-      animation: morph 8s ease-in-out infinite;
-    }
-    
-    @keyframes morph {
-      0% { d: path("M-120 -20 C -80 -80, -20 -90, 20 -60 C 90 -10, 58 70, -8 78 C -80 82, -140 30, -120 -20 Z"); }
-      33% { d: path("M-100 -40 C -40 -110, 20 -90, 60 -40 C 105 12, 98 72, 20 86 C -60 100, -150 24, -100 -40 Z"); }
-      66% { d: path("M-120 -12 C -64 -68, -12 -100, 36 -50 C 92 12, 80 72, 4 86 C -70 96, -150 20, -120 -12 Z"); }
-      100% { d: path("M-120 -20 C -80 -80, -20 -90, 20 -60 C 90 -10, 58 70, -8 78 C -80 82, -140 30, -120 -20 Z"); }
-    }
 
     /* Sound button */
     .sound-btn {
@@ -254,23 +272,6 @@
     .sound-btn:hover {
       background: var(--accent);
       color: var(--bg);
-    }
-
-    /* Species info panel */
-    .species-info {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(transparent, rgba(2,8,14,0.9));
-      padding: 20px;
-      transform: translateY(100%);
-      transition: transform 0.3s ease;
-      z-index: 5;
-    }
-    
-    .card:hover .species-info {
-      transform: translateY(0);
     }
 
     /* Advanced lab controls */
@@ -450,34 +451,6 @@
       transform: translateX(0);
     }
 
-    /* Enhanced hover effects */
-    .card-hover-content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(2,8,14,0.85);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      opacity: 0;
-      transform: translateY(10px);
-      transition: all 0.3s ease;
-      z-index: 2;
-    }
-    
-    .card:hover .card-hover-content {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-    .card:hover .meta {
-      opacity: 0;
-    }
-
     /* Hero section with backdrop effects */
     .hero-image-container {
       position: relative;
@@ -585,7 +558,6 @@
   <header class="container">
     <div class="brand">
       <div class="logo" aria-hidden="true">
-        <!-- stylized fossil + neuron icon -->
         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.06)"/>
           <path d="M20 36c6-10 16-12 24-6" stroke="white" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -675,11 +647,6 @@
             <button class="sound-btn" data-species="dodo">
               <i class="fas fa-volume-up"></i>
             </button>
-            <div class="card-hover-content">
-              <h4 style="color:var(--accent); margin-bottom:10px">Dodo</h4>
-              <p style="text-align:center; font-size:14px; line-height:1.4">Flightless bird that inhabited Mauritius. Went extinct due to human activity and introduced species in the late 17th century.</p>
-              <button class="btn" style="margin-top:15px; font-size:12px">Learn More</button>
-            </div>
           </div>
           <div class="meta">
             <h4>Dodo</h4>
@@ -693,11 +660,6 @@
             <button class="sound-btn" data-species="pigeon">
               <i class="fas fa-volume-up"></i>
             </button>
-            <div class="card-hover-content">
-              <h4 style="color:var(--accent); margin-bottom:10px">Passenger Pigeon</h4>
-              <p style="text-align:center; font-size:14px; line-height:1.4">Once the most abundant bird in North America, hunted to extinction in the early 20th century. Flocks could darken the sky for days.</p>
-              <button class="btn" style="margin-top:15px; font-size:12px">Learn More</button>
-            </div>
           </div>
           <div class="meta">
             <h4>Passenger Pigeon</h4>
@@ -711,11 +673,6 @@
             <button class="sound-btn" data-species="tiger">
               <i class="fas fa-volume-up"></i>
             </button>
-            <div class="card-hover-content">
-              <h4 style="color:var(--accent); margin-bottom:10px">Tasmanian Tiger</h4>
-              <p style="text-align:center; font-size:14px; line-height:1.4">Carnivorous marsupial native to Tasmania. The last known specimen died in Hobart Zoo in 1936. Known for its distinctive striped back.</p>
-              <button class="btn" style="margin-top:15px; font-size:12px">Learn More</button>
-            </div>
           </div>
           <div class="meta">
             <h4>Tasmanian Tiger</h4>
@@ -813,10 +770,6 @@
             <button id="gen" class="btn cta">Generate</button>
           </div>
           
-          <div class="search-results" id="searchResults" style="display:none">
-            <!-- Search results will appear here -->
-          </div>
-          
           <p style="margin-top:12px;font-size:13px;color:rgba(223,231,235,0.55)">Note: the generator provides speculative visuals for education and storytelling.</p>
         </div>
         
@@ -841,36 +794,38 @@
 
     <!-- Ecosystem Simulator -->
     <section id="action">
-      <h3 style="font-family:'Orbitron',sans-serif">Ecosystem Simulator</h3>
-      <div class="glass-card" style="margin-top:12px;display:flex;gap:18px;align-items:center;flex-wrap:wrap">
-        <div style="flex:1;min-width:300px">
-          <p style="margin:0;color:rgba(223,231,235,0.75)">As users explore and 'revive' species, a visual ecosystem grows. Your progress helps highlight the impact of biodiversity loss.</p>
-          <div style="margin-top:12px" class="ecosim">
-            <div style="display:flex;justify-content:space-between;align-items:center">
-              <div>Revivals</div>
-              <div id="revCount">0</div>
-            </div>
-            <div style="margin-top:12px" class="progress"><i id="prog"></i></div>
-            <div style="margin-top:8px;font-size:12px;color:rgba(223,231,235,0.6)">Complete the ecosystem by reviving more species</div>
+  <h3 style="font-family:'Orbitron',sans-serif">Ecosystem Simulator</h3>
+  <div class="glass-card" style="margin-top:12px;display:flex;gap:18px;align-items:stretch;flex-wrap:wrap">
+    <div style="flex:1;min-width:300px;display:flex;flex-direction:column;justify-content:space-between">
+      <div>
+        <p style="margin:0;color:rgba(223,231,235,0.75)">As users explore and 'revive' species, a visual ecosystem grows. Your progress helps highlight the impact of biodiversity loss.</p>
+        <div style="margin-top:12px" class="ecosim">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>Revivals</div>
+            <div id="revCount">0</div>
           </div>
-          
-          <div class="ecosystem-grid" id="ecosystemGrid">
-            <!-- Ecosystem items will be populated by JavaScript -->
-          </div>
-        </div>
-        
-        <div style="flex:1;min-width:320px">
-          <div id="ecosimCanvas" style="height:150px;border-radius:10px;background:linear-gradient(90deg,#031415,#041b1f);display:flex;align-items:center;justify-content:center;color:rgba(223,231,235,0.6);position:relative;overflow:hidden">
-            <div id="ecosystemAnimation" class="ecosystem-animation">
-              <img src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Ecosystem visualization" style="width:100%;height:100%;object-fit:cover;opacity:0.7">
-            </div>
-            <div style="position:absolute;bottom:10px;left:10px;font-size:12px;color:rgba(223,231,235,0.7)">
-              Ecosystem Health: <span id="ecoHealth">0%</span>
-            </div>
-          </div>
+          <div style="margin-top:12px" class="progress"><i id="prog"></i></div>
+          <div style="margin-top:8px;font-size:12px;color:rgba(223,231,235,0.6)">Complete the ecosystem by reviving more species</div>
         </div>
       </div>
-    </section>
+      
+      <div class="ecosystem-grid" id="ecosystemGrid" style="margin-top:auto;padding-top:20px">
+        <!-- Ecosystem items will be populated by JavaScript -->
+      </div>
+    </div>
+    
+    <div style="flex:1;min-width:320px;display:flex;align-items:stretch">
+      <div id="ecosimCanvas" style="height:100%;min-height:300px;border-radius:10px;background:linear-gradient(90deg,#031415,#041b1f);display:flex;align-items:center;justify-content:center;color:rgba(223,231,235,0.6);position:relative;overflow:hidden;flex:1">
+        <div id="ecosystemAnimation" class="ecosystem-animation" style="width:100%;height:100%">
+          <img src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Ecosystem visualization" style="width:100%;height:100%;object-fit:cover;opacity:0.7">
+        </div>
+        <div style="position:absolute;bottom:10px;left:10px;font-size:12px;color:rgba(223,231,235,0.7)">
+          Ecosystem Health: <span id="ecoHealth">0%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Community -->
     <section>
@@ -897,465 +852,580 @@
 
   </main>
 
-  <footer class="container">
-    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px">
-      <div>
-        <strong>EchoFauna</strong>
-        <div style="font-size:13px;color:rgba(223,231,235,0.6)">Reviving the Voices of the Extinct</div>
-        <div class="social-links">
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-      <div style="display:flex;gap:12px;align-items:center">
-        <a class="btn" href="#">Partnerships</a>
-        <a class="btn" href="#">Donate</a>
+<footer class="container">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px">
+    <div>
+      <strong>EchoFauna</strong>
+      <div style="font-size:13px;color:rgba(223,231,235,0.6)">Reviving the Voices of the Extinct</div>
+      <div class="social-links">
+        <a href="https://x.com/flevian11" aria-label="X (formerly Twitter)" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <a href="https://youtube.com/@flevianochoka" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://github.com/flevian11" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
     </div>
-  </footer>
+    <div style="display:flex;gap:12px;align-items:center">
+      <a class="btn" href="partnerships.html">Partnerships</a>
+      <a class="btn" href="donate.html">Donate</a>
+    </div>
+  </div>
+</footer>
 
   <!-- =========== Scripts =========== -->
   <script>
-    // Enhanced EchoFauna Implementation
+    // EchoFauna Application - Fixed Version
+document.addEventListener('DOMContentLoaded', function() {
+  
+  // =========== Right-Click Protection ===========
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    document.getElementById('protectionModal').classList.add('active');
+  });
 
-    /* =========== Right-Click Protection =========== */
-    document.addEventListener('contextmenu', function(e) {
-      e.preventDefault();
-      document.getElementById('protectionModal').classList.add('active');
-    });
+  document.getElementById('closeProtection').addEventListener('click', function() {
+    document.getElementById('protectionModal').classList.remove('active');
+  });
 
-    document.getElementById('closeProtection').addEventListener('click', function() {
-      document.getElementById('protectionModal').classList.remove('active');
-    });
+  // =========== Mobile Menu ===========
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mainNav = document.getElementById('mainNav');
+  
+  mobileMenuBtn.addEventListener('click', function() {
+    this.classList.toggle('active');
+    mainNav.classList.toggle('active');
+  });
 
-    /* =========== Mobile Menu =========== */
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mainNav = document.getElementById('mainNav');
+  // =========== Particle Background ===========
+  function initParticles() {
+    const canvas = document.createElement('canvas');
+    canvas.id = 'pCanvas';
+    const root = document.getElementById('particles');
+    root.appendChild(canvas);
+    const ctx = canvas.getContext('2d');
+    let w, h, dpr;
+    const particles = [];
     
-    mobileMenuBtn.addEventListener('click', () => {
-      mobileMenuBtn.classList.toggle('active');
-      mainNav.classList.toggle('active');
-    });
-
-    /* =========== Enhanced particle background =========== */
-    (function(){
-      const canvas = document.createElement('canvas');
-      canvas.id = 'pCanvas';
-      const root = document.getElementById('particles');
-      root.appendChild(canvas);
-      const ctx = canvas.getContext('2d');
-      let w,h,dpr;
-      const particles = [];
+    function resize(){
+      dpr = Math.min(2, window.devicePixelRatio || 1); 
+      w = canvas.width = Math.floor(window.innerWidth * dpr); 
+      h = canvas.height = Math.floor(window.innerHeight * dpr); 
+      canvas.style.width = window.innerWidth + 'px'; 
+      canvas.style.height = window.innerHeight + 'px'; 
+      ctx.scale(dpr, dpr);
+    }
+    
+    window.addEventListener('resize', resize); 
+    resize();
+    
+    for(let i = 0; i < 150; i++){
+      particles.push({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight, 
+        vx: (Math.random() - 0.5) * 0.3, 
+        vy: (Math.random() - 0.5) * 0.3, 
+        r: Math.random() * 3 + 0.5, 
+        alpha: Math.random() * 0.7 + 0.3,
+        color: Math.random() > 0.5 ? 'rgba(6,247,255,' : 'rgba(169,255,51,'
+      });
+    }
+    
+    function tick(){
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight); 
       
-      function resize(){
-        dpr = Math.min(2, window.devicePixelRatio || 1); 
-        w = canvas.width = Math.floor(window.innerWidth*dpr); 
-        h = canvas.height = Math.floor(window.innerHeight*dpr); 
-        canvas.style.width = window.innerWidth +'px'; 
-        canvas.style.height = window.innerHeight +'px'; 
-        ctx.scale(dpr,dpr);
-      }
+      ctx.strokeStyle = 'rgba(6,247,255,0.03)';
+      ctx.lineWidth = 0.5;
       
-      window.addEventListener('resize', resize); 
-      resize();
-      
-      // Create particles with different properties
-      for(let i=0;i<150;i++){
-        particles.push({
-          x:Math.random()*window.innerWidth,
-          y:Math.random()*window.innerHeight, 
-          vx:(Math.random()-0.5)*0.3, 
-          vy:(Math.random()-0.5)*0.3, 
-          r:Math.random()*3+0.5, 
-          alpha:Math.random()*0.7+0.3,
-          color: Math.random() > 0.5 ? 'rgba(6,247,255,' : 'rgba(169,255,51,'
-        });
-      }
-      
-      function tick(){
-        ctx.clearRect(0,0,window.innerWidth,window.innerHeight); 
-        
-        // Draw connecting lines
-        ctx.strokeStyle = 'rgba(6,247,255,0.03)';
-        ctx.lineWidth = 0.5;
-        
-        for(let i=0;i<particles.length;i++){
-          for(let j=i+1;j<particles.length;j++){
-            const dx = particles[i].x - particles[j].x;
-            const dy = particles[i].y - particles[j].y;
-            const distance = Math.sqrt(dx*dx + dy*dy);
-            
-            if(distance < 100){
-              ctx.beginPath();
-              ctx.moveTo(particles[i].x, particles[i].y);
-              ctx.lineTo(particles[j].x, particles[j].y);
-              ctx.stroke();
-            }
+      for(let i = 0; i < particles.length; i++){
+        for(let j = i + 1; j < particles.length; j++){
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          
+          if(distance < 100){
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.stroke();
           }
         }
-        
-        // Draw particles
-        for(let p of particles){
-          p.x+=p.vx; 
-          p.y+=p.vy; 
-          
-          if(p.x<-10) p.x=window.innerWidth+10; 
-          if(p.x>window.innerWidth+10) p.x=-10; 
-          if(p.y<-10) p.y=window.innerHeight+10; 
-          if(p.y>window.innerHeight+10) p.y=-10; 
-          
-          ctx.beginPath(); 
-          ctx.fillStyle = p.color + (p.alpha*0.1) + ')'; 
-          ctx.arc(p.x,p.y,p.r,0,Math.PI*2); 
-          ctx.fill();
-        } 
-        
-        requestAnimationFrame(tick);
       }
+      
+      for(let p of particles){
+        p.x += p.vx; 
+        p.y += p.vy; 
+        
+        if(p.x < -10) p.x = window.innerWidth + 10; 
+        if(p.x > window.innerWidth + 10) p.x = -10; 
+        if(p.y < -10) p.y = window.innerHeight + 10; 
+        if(p.y > window.innerHeight + 10) p.y = -10; 
+        
+        ctx.beginPath(); 
+        ctx.fillStyle = p.color + (p.alpha * 0.1) + ')'; 
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); 
+        ctx.fill();
+      } 
       
       requestAnimationFrame(tick);
-    })();
-
-    /* =========== Fixed Story Carousel =========== */
-    (function(){
-      const scenes = document.querySelectorAll('.story-scene');
-      const dots = document.querySelectorAll('.story-dot');
-      const prevBtn = document.getElementById('prevStory');
-      const nextBtn = document.getElementById('nextStory');
-      
-      if (scenes.length === 0) return;
-      
-      let currentScene = 0;
-      let autoAdvance = true;
-      let autoAdvanceInterval;
-      
-      // Start auto-advance
-      startAutoAdvance();
-      
-      // Set up dot navigation
-      dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-          autoAdvance = false;
-          clearInterval(autoAdvanceInterval);
-          setScene(index);
-          // Restart auto-advance after manual interaction
-          setTimeout(() => {
-            autoAdvance = true;
-            startAutoAdvance();
-          }, 10000);
-        });
-      });
-      
-      // Previous button
-      prevBtn.addEventListener('click', () => {
-        autoAdvance = false;
-        clearInterval(autoAdvanceInterval);
-        setScene(currentScene - 1);
-        // Restart auto-advance after manual interaction
-        setTimeout(() => {
-          autoAdvance = true;
-          startAutoAdvance();
-        }, 10000);
-      });
-      
-      // Next button
-      nextBtn.addEventListener('click', () => {
-        autoAdvance = false;
-        clearInterval(autoAdvanceInterval);
-        setScene(currentScene + 1);
-        // Restart auto-advance after manual interaction
-        setTimeout(() => {
-          autoAdvance = true;
-          startAutoAdvance();
-        }, 10000);
-      });
-      
-      function startAutoAdvance() {
-        if (autoAdvance) {
-          autoAdvanceInterval = setInterval(() => {
-            setScene((currentScene + 1) % scenes.length);
-          }, 5000);
-        }
-      }
-      
-      function setScene(index) {
-        // Handle wrap-around
-        if (index < 0) index = scenes.length - 1;
-        if (index >= scenes.length) index = 0;
-        
-        // Hide all scenes
-        scenes.forEach(scene => scene.classList.remove('active'));
-        dots.forEach(dot => dot.classList.remove('active'));
-        
-        // Show selected scene
-        scenes[index].classList.add('active');
-        dots[index].classList.add('active');
-        currentScene = index;
-      }
-    })();
-
-    /* =========== Sound buttons for species cards =========== */
-    (function(){
-      const soundButtons = document.querySelectorAll('.sound-btn');
-      
-      soundButtons.forEach(btn => {
-        btn.addEventListener('click', function(e) {
-          e.stopPropagation();
-          const species = this.getAttribute('data-species');
-          showNotification(`Playing ${species} call (simulated)`);
-          
-          // In a real implementation, this would play an actual sound
-          // For now, we'll just show a notification
-        });
-      });
-    })();
-
-    /* =========== Fixed AI Lab with working image generation =========== */
-    (function(){
-      const s1=document.getElementById('s1'), 
-            s2=document.getElementById('s2'), 
-            s3=document.getElementById('s3'),
-            s4=document.getElementById('s4'),
-            gen=document.getElementById('gen'), 
-            desc=document.getElementById('desc'), 
-            lab=document.getElementById('labCanvas'),
-            furValue=document.getElementById('furValue'),
-            sizeValue=document.getElementById('sizeValue'),
-            colorValue=document.getElementById('colorValue'),
-            habitatValue=document.getElementById('habitatValue');
-      
-      if (!gen) return;
-      
-      // Real-time slider updates
-      function updateSliderValues() {
-        furValue.textContent = `${s1.value}%`;
-        sizeValue.textContent = `${s2.value}%`;
-        colorValue.textContent = `${s3.value}%`;
-        habitatValue.textContent = `${s4.value}%`;
-        
-        // Update preview in real-time
-        updatePreview();
-      }
-      
-      // Update slider values in real-time
-      s1.addEventListener('input', updateSliderValues);
-      s2.addEventListener('input', updateSliderValues);
-      s3.addEventListener('input', updateSliderValues);
-      s4.addEventListener('input', updateSliderValues);
-      
-      // Function to update preview based on slider values
-      function updatePreview() {
-        const feather = s1.value; 
-        const size = s2.value; 
-        const col = Math.floor(100 + s3.value*1.5); 
-        const habitat = s4.value;
-        
-        // Create a visual representation based on slider values
-        const preview = document.createElement('div');
-        preview.innerHTML = `
-          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
-            <rect width="100%" height="100%" fill="#021416"/>
-            <g transform="translate(200 160)">
-              <ellipse rx="${size/8}" ry="${size/16}" fill="rgba(0,0,0,0.25)"/>
-            </g>
-            <g transform="translate(200 140)">
-              <path d="M -80 20 C -20 -${feather/2} 20 -${feather+10} 80 20 C 60 40 10 50 -20 48 C -60 46 -75 36 -80 20 Z" 
-                    fill="rgba(${col},200,180,0.7)"/>
-            </g>
-            <text x="12" y="20" fill="rgba(223,231,235,0.7)" font-size="12">
-              Preview • Size:${size}% • Color:${s3.value}%
-            </text>
-          </svg>
-        `;
-        
-        // Only update if we're not showing a generated image
-        if (!lab.querySelector('img')) {
-          lab.innerHTML = '';
-          lab.appendChild(preview);
-        }
-      }
-      
-      // Initialize preview
-      updatePreview();
-      
-      // Get fallback image based on description keywords
-      function getFallbackImage(description) {
-        const keyword = description.toLowerCase();
-        
-        if (keyword.includes('dodo') || keyword.includes('flightless') || keyword.includes('mauritius')) {
-          return 'https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80';
-        } else if (keyword.includes('pigeon') || keyword.includes('bird') || keyword.includes('flock')) {
-          return 'https://images.unsplash.com/photo-1522926193341-e9ffd686c60f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80';
-        } else if (keyword.includes('tiger') || keyword.includes('thylacine') || keyword.includes('marsupial')) {
-          return 'https://images.unsplash.com/photo-1589656966895-2f33e7653819?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80';
-        } else if (keyword.includes('mammoth') || keyword.includes('woolly') || keyword.includes('elephant')) {
-          return 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80';
-        } else if (keyword.includes('sabertooth') || keyword.includes('saber') || keyword.includes('cat')) {
-          return 'https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80';
-        } else {
-          // Fallback to a random extinct animal image
-          const fallbacks = [
-            'https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-            'https://images.unsplash.com/photo-1522926193341-e9ffd686c60f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-            'https://images.unsplash.com/photo-1589656966895-2f33e7653819?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
-          ];
-          return fallbacks[Math.floor(Math.random() * fallbacks.length)];
-        }
-      }
-      
-      gen.addEventListener('click', async ()=>{ 
-        if (!desc.value.trim()) {
-          showNotification('Please describe an animal first');
-          return;
-        }
-        
-        try {
-          // Show loading state
-          lab.innerHTML = '<div class="placeholder loading">Generating AI reconstruction...</div>';
-          
-          // Simulate API call delay
-          await new Promise(resolve => setTimeout(resolve, 1500));
-          
-          // Get image based on description
-          const imageUrl = getFallbackImage(desc.value);
-          
-          // Display the generated image
-          lab.innerHTML = `<img src="${imageUrl}" alt="AI reconstruction of ${desc.value}" />`;
-          
-          // Update ecosystem
-          updateEcosystem();
-          
-          showNotification('Species revived and added to ecosystem!');
-        } catch (error) {
-          console.error('Error generating image:', error);
-          lab.innerHTML = '<div class="placeholder">Error generating reconstruction. Please try again.</div>';
-        }
-      });
-    })();
-
-    /* =========== Enhanced Ecosystem Simulator =========== */
-    (function(){
-      const ecosystemGrid = document.getElementById('ecosystemGrid');
-      const ecoHealth = document.getElementById('ecoHealth');
-      const ecosystemAnimation = document.getElementById('ecosystemAnimation');
-      
-      // Initialize ecosystem grid
-      function initEcosystemGrid() {
-        const totalItems = 12;
-        for (let i = 0; i < totalItems; i++) {
-          const item = document.createElement('div');
-          item.className = 'ecosystem-item';
-          item.innerHTML = '<i class="fas fa-question" style="color:rgba(223,231,235,0.3)"></i>';
-          ecosystemGrid.appendChild(item);
-        }
-      }
-      
-      // Create animated ecosystem elements
-      function createEcosystemAnimation(count) {
-        // Clear existing animation
-        const existingElements = ecosystemAnimation.querySelectorAll('.eco-element');
-        existingElements.forEach(el => el.remove());
-        
-        const elements = ['🌿', '🐾', '🌳', '🦋', '🐦', '🦎', '🐞', '🌺'];
-        
-        for (let i = 0; i < Math.min(count * 2, 16); i++) {
-          const element = document.createElement('div');
-          element.className = 'eco-element';
-          element.textContent = elements[Math.floor(Math.random() * elements.length)];
-          element.style.left = `${Math.random() * 90}%`;
-          element.style.top = `${Math.random() * 90}%`;
-          element.style.fontSize = `${Math.random() * 16 + 12}px`;
-          element.style.animationDelay = `${Math.random() * 2}s`;
-          ecosystemAnimation.appendChild(element);
-        }
-      }
-      
-      // Update ecosystem based on revived species count
-      function updateEcosystem() {
-        const count = Number(localStorage.getItem('revCount') || 0) + 1;
-        localStorage.setItem('revCount', count);
-        
-        document.getElementById('revCount').textContent = count;
-        const pct = Math.min(100, (count/12)*100);
-        document.getElementById('prog').style.width = pct + '%';
-        
-        // Update ecosystem health
-        ecoHealth.textContent = `${Math.round(pct)}%`;
-        
-        // Update ecosystem grid
-        const items = ecosystemGrid.querySelectorAll('.ecosystem-item');
-        for (let i = 0; i < items.length; i++) {
-          if (i < count) {
-            items[i].classList.add('unlocked');
-            items[i].innerHTML = '<i class="fas fa-paw" style="color:var(--accent)"></i>';
-          }
-        }
-        
-        // Update ecosystem animation
-        createEcosystemAnimation(count);
-      }
-      
-      // Initialize
-      initEcosystemGrid();
-      
-      // Load existing progress
-      const count = Number(localStorage.getItem('revCount') || 0);
-      if (count > 0) {
-        document.getElementById('revCount').textContent = count;
-        const pct = Math.min(100, (count/12)*100);
-        document.getElementById('prog').style.width = pct + '%';
-        ecoHealth.textContent = `${Math.round(pct)}%`;
-        
-        // Update ecosystem grid
-        const items = ecosystemGrid.querySelectorAll('.ecosystem-item');
-        for (let i = 0; i < items.length; i++) {
-          if (i < count) {
-            items[i].classList.add('unlocked');
-            items[i].innerHTML = '<i class="fas fa-paw" style="color:var(--accent)"></i>';
-          }
-        }
-        
-        createEcosystemAnimation(count);
-      }
-      
-      // Make updateEcosystem available globally
-      window.updateEcosystem = updateEcosystem;
-    })();
-
-    /* =========== Notification System =========== */
-    function showNotification(message) {
-      const notification = document.getElementById('notification');
-      notification.textContent = message;
-      notification.classList.add('show');
-      
-      setTimeout(() => {
-        notification.classList.remove('show');
-      }, 3000);
     }
+    
+    tick();
+  }
+  initParticles();
 
-    /* =========== Scroll Animations =========== */
-    (function(){
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+  // =========== Story Carousel ===========
+  function initStoryCarousel() {
+    const scenes = document.querySelectorAll('.story-scene');
+    const dots = document.querySelectorAll('.story-dot');
+    const prevBtn = document.getElementById('prevStory');
+    const nextBtn = document.getElementById('nextStory');
+    
+    if (scenes.length === 0) return;
+    
+    let currentScene = 0;
+    let autoAdvance = true;
+    let autoAdvanceInterval;
+    
+    function startAutoAdvance() {
+      if (autoAdvance) {
+        autoAdvanceInterval = setInterval(function() {
+          setScene((currentScene + 1) % scenes.length);
+        }, 5000);
+      }
+    }
+    
+    function setScene(index) {
+      if (index < 0) index = scenes.length - 1;
+      if (index >= scenes.length) index = 0;
+      
+      scenes.forEach(scene => scene.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+      
+      scenes[index].classList.add('active');
+      dots[index].classList.add('active');
+      currentScene = index;
+    }
+    
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', function() {
+        autoAdvance = false;
+        clearInterval(autoAdvanceInterval);
+        setScene(index);
+        setTimeout(function() {
+          autoAdvance = true;
+          startAutoAdvance();
+        }, 10000);
+      });
+    });
+    
+    prevBtn.addEventListener('click', function() {
+      autoAdvance = false;
+      clearInterval(autoAdvanceInterval);
+      setScene(currentScene - 1);
+      setTimeout(function() {
+        autoAdvance = true;
+        startAutoAdvance();
+      }, 10000);
+    });
+    
+    nextBtn.addEventListener('click', function() {
+      autoAdvance = false;
+      clearInterval(autoAdvanceInterval);
+      setScene(currentScene + 1);
+      setTimeout(function() {
+        autoAdvance = true;
+        startAutoAdvance();
+      }, 10000);
+    });
+    
+    startAutoAdvance();
+  }
+  initStoryCarousel();
+
+  // =========== Sound Buttons ===========
+  function initSoundButtons() {
+    const soundButtons = document.querySelectorAll('.sound-btn');
+    
+    soundButtons.forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const species = this.getAttribute('data-species');
+        showNotification(`Playing ${species} call (simulated)`);
+      });
+    });
+  }
+  initSoundButtons();
+
+  // =========== AI Lab with Reliable Image Loading ===========
+  function initAILab() {
+    const s1 = document.getElementById('s1'), 
+          s2 = document.getElementById('s2'), 
+          s3 = document.getElementById('s3'),
+          s4 = document.getElementById('s4'),
+          gen = document.getElementById('gen'), 
+          desc = document.getElementById('desc'), 
+          lab = document.getElementById('labCanvas'),
+          furValue = document.getElementById('furValue'),
+          sizeValue = document.getElementById('sizeValue'),
+          colorValue = document.getElementById('colorValue'),
+          habitatValue = document.getElementById('habitatValue');
+    
+    if (!gen) return;
+    
+    function updateSliderValues() {
+      furValue.textContent = `${s1.value}%`;
+      sizeValue.textContent = `${s2.value}%`;
+      colorValue.textContent = `${s3.value}%`;
+      habitatValue.textContent = `${s4.value}%`;
+      updatePreview();
+    }
+    
+    s1.addEventListener('input', updateSliderValues);
+    s2.addEventListener('input', updateSliderValues);
+    s3.addEventListener('input', updateSliderValues);
+    s4.addEventListener('input', updateSliderValues);
+    
+    function updatePreview() {
+      const feather = s1.value; 
+      const size = s2.value; 
+      const col = Math.floor(100 + s3.value * 1.5); 
+      
+      const preview = document.createElement('div');
+      preview.innerHTML = `
+        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+          <rect width="100%" height="100%" fill="#021416"/>
+          <g transform="translate(200 160)">
+            <ellipse rx="${size/8}" ry="${size/16}" fill="rgba(0,0,0,0.25)"/>
+          </g>
+          <g transform="translate(200 140)">
+            <path d="M -80 20 C -20 -${feather/2} 20 -${feather+10} 80 20 C 60 40 10 50 -20 48 C -60 46 -75 36 -80 20 Z" 
+                  fill="rgba(${col},200,180,0.7)"/>
+          </g>
+          <text x="12" y="20" fill="rgba(223,231,235,0.7)" font-size="12">
+            Preview • Size:${size}% • Color:${s3.value}%
+          </text>
+        </svg>
+      `;
+      
+      if (!lab.querySelector('img')) {
+        lab.innerHTML = '';
+        lab.appendChild(preview);
+      }
+    }
+    
+    updatePreview();
+    
+    // Function to check if image exists and loads properly
+    function checkImageExists(url, timeout = 5000) {
+      return new Promise((resolve) => {
+        const img = new Image();
+        let timedOut = false;
+        
+        const timer = setTimeout(() => {
+          timedOut = true;
+          img.src = ''; // Stop loading
+          resolve(false);
+        }, timeout);
+        
+        img.onload = function() {
+          if (!timedOut) {
+            clearTimeout(timer);
+            resolve(true);
+          }
+        };
+        
+        img.onerror = function() {
+          if (!timedOut) {
+            clearTimeout(timer);
+            resolve(false);
+          }
+        };
+        
+        img.src = url;
+      });
+    }
+    
+    // Function to search Unsplash with multiple fallbacks
+    async function searchUnsplashWithFallback(query) {
+      const searchTerms = [
+        query + ' animal extinct wildlife',
+        query + ' wildlife nature',
+        query + ' animal',
+        'extinct ' + query,
+        query
+      ];
+      
+      // Try each search term until we find a working image
+      for (let term of searchTerms) {
+        const searchQuery = encodeURIComponent(term);
+        const imageUrl = `https://source.unsplash.com/600x400/?${searchQuery}`;
+        
+        console.log(`Trying Unsplash search: ${term}`);
+        const imageExists = await checkImageExists(imageUrl, 3000);
+        
+        if (imageExists) {
+          console.log(`Success with search term: ${term}`);
+          return imageUrl;
+        }
+      }
+      
+      // If all Unsplash searches fail, use curated fallback
+      console.log('All Unsplash searches failed, using fallback');
+      return getFallbackImage(query);
+    }
+    
+    function getFallbackImage(description) {
+      const keyword = description.toLowerCase();
+      
+      // Curated fallback images that are guaranteed to work
+      const fallbackImages = {
+        dodo: 'https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+        pigeon: 'https://images.unsplash.com/photo-1522926193341-e9ffd686c60f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+        tiger: 'https://images.unsplash.com/photo-1589656966895-2f33e7653819?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+        thylacine: 'https://images.unsplash.com/photo-1589656966895-2f33e7653819?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+        mammoth: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+        sabertooth: 'https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+        bird: 'https://images.unsplash.com/photo-1522926193341-e9ffd686c60f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+        default: 'https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
       };
       
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.style.animation = `fadeIn 1s ease forwards`;
-          }
-        });
-      }, observerOptions);
+      // Check for specific keywords
+      if (keyword.includes('dodo') || keyword.includes('flightless') || keyword.includes('mauritius')) {
+        return fallbackImages.dodo;
+      } else if (keyword.includes('pigeon') || keyword.includes('bird') || keyword.includes('flock')) {
+        return fallbackImages.pigeon;
+      } else if (keyword.includes('tiger') || keyword.includes('thylacine') || keyword.includes('marsupial')) {
+        return fallbackImages.tiger;
+      } else if (keyword.includes('mammoth') || keyword.includes('woolly') || keyword.includes('elephant')) {
+        return fallbackImages.mammoth;
+      } else if (keyword.includes('sabertooth') || keyword.includes('saber') || keyword.includes('cat')) {
+        return fallbackImages.sabertooth;
+      } else {
+        // Return a random fallback for generic terms
+        const fallbacks = Object.values(fallbackImages);
+        return fallbacks[Math.floor(Math.random() * fallbacks.length)];
+      }
+    }
+    
+    gen.addEventListener('click', async function(){ 
+      if (!desc.value.trim()) {
+        showNotification('Please describe an animal first');
+        return;
+      }
       
-      // Observe all sections
-      document.querySelectorAll('section').forEach(section => {
-        observer.observe(section);
-      });
-    })();
+      try {
+        lab.innerHTML = '<div class="placeholder loading">Searching for: ' + desc.value + '...</div>';
+        
+        // Search for image with robust error handling
+        const imageUrl = await searchUnsplashWithFallback(desc.value);
+        
+        // Create the image element
+        const img = document.createElement('img');
+        img.alt = `AI reconstruction of ${desc.value}`;
+        img.style.maxWidth = '100%';
+        img.style.maxHeight = '100%';
+        img.style.objectFit = 'contain';
+        img.style.borderRadius = '8px';
+        
+        // Final verification that the image loads
+        lab.innerHTML = '<div class="placeholder loading">Loading image...</div>';
+        
+        const finalCheck = await checkImageExists(imageUrl, 5000);
+        
+        if (finalCheck) {
+          img.src = imageUrl;
+          lab.innerHTML = '';
+          lab.appendChild(img);
+          updateEcosystem();
+          showNotification('Species revived and added to ecosystem!');
+        } else {
+          // If final check fails, use guaranteed fallback
+          throw new Error('Final image verification failed');
+        }
+        
+      } catch (error) {
+        console.error('Error generating image:', error);
+        
+        // Always show an image - use guaranteed fallback
+        const guaranteedImage = getFallbackImage(desc.value);
+        const img = document.createElement('img');
+        img.src = guaranteedImage;
+        img.alt = `AI reconstruction of ${desc.value}`;
+        img.style.maxWidth = '100%';
+        img.style.maxHeight = '100%';
+        img.style.objectFit = 'contain';
+        img.style.borderRadius = '8px';
+        
+        lab.innerHTML = '';
+        lab.appendChild(img);
+        updateEcosystem();
+        showNotification('Species revived!');
+      }
+    });
+  }
+  initAILab();
 
+  // =========== Ecosystem Simulator ===========
+  function initEcosystem() {
+    const ecosystemGrid = document.getElementById('ecosystemGrid');
+    const ecoHealth = document.getElementById('ecoHealth');
+    const ecosystemAnimation = document.getElementById('ecosystemAnimation');
+    
+    function initEcosystemGrid() {
+      const totalItems = 12;
+      for (let i = 0; i < totalItems; i++) {
+        const item = document.createElement('div');
+        item.className = 'ecosystem-item';
+        item.innerHTML = '<i class="fas fa-question" style="color:rgba(223,231,235,0.3)"></i>';
+        ecosystemGrid.appendChild(item);
+      }
+    }
+    
+    function createEcosystemAnimation(count) {
+      const existingElements = ecosystemAnimation.querySelectorAll('.eco-element');
+      existingElements.forEach(el => el.remove());
+      
+      const elements = ['🌿', '🐾', '🌳', '🦋', '🐦', '🦎', '🐞', '🌺'];
+      
+      for (let i = 0; i < Math.min(count * 2, 16); i++) {
+        const element = document.createElement('div');
+        element.className = 'eco-element';
+        element.textContent = elements[Math.floor(Math.random() * elements.length)];
+        element.style.left = `${Math.random() * 90}%`;
+        element.style.top = `${Math.random() * 90}%`;
+        element.style.fontSize = `${Math.random() * 16 + 12}px`;
+        element.style.animationDelay = `${Math.random() * 2}s`;
+        ecosystemAnimation.appendChild(element);
+      }
+    }
+    
+    function updateEcosystem() {
+      const count = Number(localStorage.getItem('revCount') || 0) + 1;
+      localStorage.setItem('revCount', count);
+      
+      document.getElementById('revCount').textContent = count;
+      const pct = Math.min(100, (count/12)*100);
+      document.getElementById('prog').style.width = pct + '%';
+      
+      ecoHealth.textContent = `${Math.round(pct)}%`;
+      
+      const items = ecosystemGrid.querySelectorAll('.ecosystem-item');
+      for (let i = 0; i < items.length; i++) {
+        if (i < count) {
+          items[i].classList.add('unlocked');
+          items[i].innerHTML = '<i class="fas fa-paw" style="color:var(--accent)"></i>';
+        }
+      }
+      
+      createEcosystemAnimation(count);
+    }
+    
+    initEcosystemGrid();
+    
+    const count = Number(localStorage.getItem('revCount') || 0);
+    if (count > 0) {
+      document.getElementById('revCount').textContent = count;
+      const pct = Math.min(100, (count/12)*100);
+      document.getElementById('prog').style.width = pct + '%';
+      ecoHealth.textContent = `${Math.round(pct)}%`;
+      
+      const items = ecosystemGrid.querySelectorAll('.ecosystem-item');
+      for (let i = 0; i < items.length; i++) {
+        if (i < count) {
+          items[i].classList.add('unlocked');
+          items[i].innerHTML = '<i class="fas fa-paw" style="color:var(--accent)"></i>';
+        }
+      }
+      
+      createEcosystemAnimation(count);
+    }
+    
+    window.updateEcosystem = updateEcosystem;
+  }
+  initEcosystem();
+
+  // =========== Notification System ===========
+  function showNotification(message) {
+    const notification = document.getElementById('notification');
+    notification.textContent = message;
+    notification.classList.add('show');
+    
+    setTimeout(function() {
+      notification.classList.remove('show');
+    }, 3000);
+  }
+
+  // =========== Simple Globe Interaction ===========
+  function initSimpleGlobe() {
+    const globeWrap = document.getElementById('globeWrap');
+    if (!globeWrap) return;
+    
+    globeWrap.addEventListener('click', function() {
+      showNotification('Globe interaction coming soon! Explore the featured species below.');
+    });
+  }
+  initSimpleGlobe();
+
+  // =========== Smooth Scrolling for Navigation ===========
+  function initSmoothScrolling() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  }
+  initSmoothScrolling();
+
+  // =========== Intersection Observer for Animations ===========
+  function initScrollAnimations() {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animation = `fadeIn 1s ease forwards`;
+        }
+      });
+    }, observerOptions);
+    
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+  }
+  initScrollAnimations();
+
+  // =========== Enhanced Card Hover Effects ===========
+  function initCardHoverEffects() {
+    const cards = document.querySelectorAll('.card');
+    
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-5px) scale(1.02)';
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+  }
+  initCardHoverEffects();
+});
   </script>
 </body>
 </html>
