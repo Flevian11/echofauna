@@ -70,6 +70,22 @@
   <link rel="canonical" href="https://echofauna.com" />
   <style>
     /* =========== Base / Reset =========== */
+    /* Quick overflow fix */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px;
+    }
+}
 
     /* =========== Fix Horizontal Overflow =========== */
 html, body {
@@ -1516,4 +1532,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
   </script>
 </body>
+
 </html>
