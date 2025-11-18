@@ -1,1 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Partnerships | EchoFauna — Collaborating to Revive Extinct Species</title>
+  <meta name="description" content="Join EchoFauna's network of scientific institutions, conservation organizations, and technology partners working together to digitally preserve biodiversity." />
+  <meta name="keywords" content="partnerships, collaboration, conservation partners, scientific institutions, technology partners, biodiversity preservation" />
+  <meta name="author" content="EchoFauna" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://echofauna.com/partnerships.html" />
+  <meta property="og:title" content="Partnerships | EchoFauna — Collaborating to Revive Extinct Species" />
+  <meta property="og:description" content="Join EchoFauna's network of scientific institutions, conservation organizations, and technology partners." />
+  <meta property="og:image" content="https://echofauna.com/images/partnerships-og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="EchoFauna" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://echofauna.com/partnerships.html" />
+  <meta property="twitter:title" content="Partnerships | EchoFauna — Collaborating to Revive Extinct Species" />
+  <meta property="twitter:description" content="Join EchoFauna's network of partners working to digitally preserve biodiversity." />
+  <meta property="twitter:image" content="https://echofauna.com/images/partnerships-twitter-image.jpg" />
+  
+  <!-- Additional SEO Meta Tags -->
+  <meta name="theme-color" content="#06f7ff" />
+  <meta name="msapplication-TileColor" content="#0f1720" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://echofauna.com/partnerships.html" />
+  
+  <!-- Fonts and Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Spectral:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* =========== Base / Reset =========== */
 
+    /* =========== Fix Horizontal Overflow =========== */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Ensure all sections don't exceed viewport */
+section {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Fix for specific elements that might cause overflow */
+.hero, .glass-card, .carousel, .masonry, .lab, .form-grid {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Additional mobile-specific fixes */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px !important;
+    }
+    
+    /* Ensure images don't cause overflow */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Fix for hero section */
+    .hero {
+        padding: 30px 0 50px !important;
+    }
+    
+    /* Fix for cards and grids */
+    .carousel, .masonry, .partnership-grid, .benefits-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+    
+    /* Fix for form elements */
+    input, select, textarea {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    /* Fix for story container */
+    .story-container {
+        height: auto !important;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 10px !important;
+    }
+    
+    /* Further reduce padding on very small screens */
+    .glass-card, .card, .partnership-card {
+        padding: 15px !important;
+    }
+    
+    /* Adjust font sizes for very small screens */
+    h2 {
+        font-size: 24px !important;
+        line-height: 1.1 !important;
+    }
+    
+    .hero {
+        padding: 20px 0 40px !important;
+    }
+}
+    :root{
+      --bg:#0b0f14; /* dark slate */
+      --card:#0f1720;
+      --accent:#06f7ff; /* neon cyan */
+      --accent-2:#a9ff33; /* bio-lime */
+      --muted:#dfe7eb; /* fossil white */
+      --gold:#c68b2e;
+      --glass: rgba(255,255,255,0.04);
+      --glass-2: rgba(255,255,255,0.02);
+      --radius:14px;
+      --error: #ff3366;
+      --success: #33ff88;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;padding:0;min-height:100%;
+      font-family: 'Spectral', Georgia, serif;
+      background: radial-gradient(1200px 800px at 10% 10%, rgba(6,247,255,0.03), transparent),
+                  radial-gradient(800px 600px at 90% 80%, rgba(169,255,51,0.02), transparent),
+                  linear-gradient(180deg,var(--bg), #051018 120%);
+      color:var(--muted);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      overflow-x:hidden;
+    }
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1400px;margin:0 auto;padding:36px}
+
+    /* =========== Header =========== */
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0;position:relative;z-index:100}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{
+      width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      box-shadow:0 8px 30px rgba(10,200,255,0.06), inset 0 -6px 18px rgba(255,255,255,0.06);
+      display:flex;align-items:center;justify-content:center;flex-shrink:0;
+      animation: logoPulse 8s infinite;
+    }
+    @keyframes logoPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    .logo svg{width:36px;height:36px;filter:drop-shadow(0 8px 18px rgba(6,247,255,0.12))}
+    .brand h1{font-family:'Orbitron',sans-serif;font-weight:700;margin:0;font-size:18px;letter-spacing:0.6px}
+    .brand p{margin:0;font-size:12px;color:rgba(223,231,235,0.7)}
+
+    nav{display:flex;gap:12px;align-items:center}
+    .btn{padding:10px 14px;border-radius:12px;background:transparent;border:1px solid rgba(255,255,255,0.06);backdrop-filter:blur(6px);transition:all 0.3s ease;font-family:'Orbitron',sans-serif;font-weight:500;position:relative;overflow:hidden}
+    .btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.1),transparent);transition:left 0.5s}
+    .btn:hover::before{left:100%}
+    .btn.cta{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#021017;border:0;font-weight:700}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(6,247,255,0.2)}
+    .btn.cta:hover{box-shadow:0 6px 16px rgba(169,255,51,0.3)}
+
+    /* Mobile menu */
+    .mobile-menu-btn{display:none;flex-direction:column;gap:4px;background:transparent;border:none;cursor:pointer}
+    .mobile-menu-btn span{width:24px;height:2px;background:var(--muted);transition:all 0.3s ease}
+    .mobile-menu-btn.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+    .mobile-menu-btn.active span:nth-child(2){opacity:0}
+    .mobile-menu-btn.active span:nth-child(3){transform:rotate(-45deg) translate(7px,-6px)}
+
+    /* =========== Hero =========== */
+    .hero{position:relative;padding:48px 0 80px;display:grid;grid-template-columns:1fr;gap:40px;align-items:center;min-height:60vh;text-align:center}
+    .hero-left{padding-right:18px}
+    .eyebrow{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);font-size:13px;color:var(--accent-2);margin-bottom:14px;animation: fadeIn 1s ease}
+    h2{font-family:'Orbitron',sans-serif;font-size:48px;line-height:1.02;margin:0 0 12px;color:var(--muted);animation: slideIn 1s ease}
+    p.lead{color:rgba(223,231,235,0.8);font-size:18px;margin:0 0 18px;animation: fadeIn 1.2s ease;max-width:800px;margin-left:auto;margin-right:auto}
+    .hero-ctas{display:flex;gap:12px;animation: fadeIn 1.4s ease;justify-content:center}
+
+    /* particle canvas overlay */
+    #particles{position:absolute;inset:0;pointer-events:none;z-index:0}
+
+    /* =========== Sections =========== */
+    section{padding:48px 0;position:relative}
+    .glass-card{background:var(--glass);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);backdrop-filter:blur(10px)}
+
+    /* Partnership Cards */
+    .partnership-grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));gap:18px;margin-top:18px}
+    .partnership-card{background:var(--card);padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);display:flex;flex-direction:column;transition:transform 0.3s ease, box-shadow 0.3s ease;position:relative;overflow:hidden}
+    .partnership-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent-2));transform:scaleX(0);transition:transform 0.3s ease}
+    .partnership-card:hover::before{transform:scaleX(1)}
+    .partnership-card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(6,247,255,0.1)}
+    .partner-logo{height:80px;display:flex;align-items:center;justify-content:center;margin-bottom:15px}
+    .partner-logo img{max-height:100%;max-width:100%;object-fit:contain;filter:brightness(0.9)}
+    .partner-name{font-family:'Orbitron',sans-serif;font-size:18px;margin:0 0 8px;color:var(--accent)}
+    .partner-description{font-size:14px;color:rgba(223,231,235,0.7);margin:0 0 15px;flex-grow:1}
+    .partner-type{display:inline-block;padding:4px 8px;border-radius:6px;background:rgba(6,247,255,0.1);color:var(--accent);font-size:12px;font-family:'Orbitron',sans-serif;margin-bottom:10px}
+
+
+    /* =========== Dropdown Styling =========== */
+select {
+  background: var(--card) !important;
+  color: var(--muted) !important;
+  border: 1px solid rgba(255,255,255,0.06) !important;
+  border-radius: 10px !important;
+  padding: 12px !important;
+  font-family: 'Spectral', serif !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2306f7ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 12px center !important;
+  background-size: 16px !important;
+}
+
+select:focus {
+  outline: none !important;
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 2px rgba(6,247,255,0.2) !important;
+}
+
+select option {
+  background: var(--card) !important;
+  color: var(--muted) !important;
+  padding: 12px !important;
+}
+
+select option:hover,
+select option:focus,
+select option:checked {
+  background: rgba(6,247,255,0.1) !important;
+  color: var(--accent) !important;
+}
+
+
+    /* Partnership Tiers */
+    .tiers-container{display:flex;flex-wrap:wrap;gap:18px;margin-top:18px;justify-content:center}
+    .tier-card{background:var(--card);border-radius:12px;border:1px solid rgba(255,255,255,0.03);padding:24px;flex:1;min-width:250px;max-width:350px;display:flex;flex-direction:column;transition:transform 0.3s ease;position:relative;overflow:hidden}
+    .tier-card::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg, rgba(6,247,255,0.05), rgba(169,255,51,0.02));opacity:0;transition:opacity 0.3s ease}
+    .tier-card:hover::before{opacity:1}
+    .tier-card:hover{transform:translateY(-5px)}
+    .tier-name{font-family:'Orbitron',sans-serif;font-size:20px;margin:0 0 8px;color:var(--accent)}
+    .tier-price{font-size:24px;font-family:'Orbitron',sans-serif;margin:0 0 15px;color:var(--accent-2)}
+    .tier-features{list-style:none;padding:0;margin:0 0 20px;flex-grow:1}
+    .tier-features li{padding:6px 0;color:rgba(223,231,235,0.7);position:relative;padding-left:20px}
+    .tier-features li:before{content:'✓';position:absolute;left:0;color:var(--accent-2)}
+    .tier-highlight{background:linear-gradient(135deg, rgba(6,247,255,0.1), rgba(169,255,51,0.05));border:1px solid rgba(6,247,255,0.2);transform:scale(1.05)}
+    .tier-highlight .tier-name{color:var(--accent-2)}
+
+    /* Partnership Form */
+    .form-container{max-width:800px;margin:0 auto}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .form-group{display:flex;flex-direction:column;gap:8px}
+    .form-group.full{grid-column:1/-1}
+    label{font-size:14px;color:rgba(223,231,235,0.8)}
+    input, select, textarea{padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.05);color:var(--muted);font-family:'Spectral', serif;transition:all 0.3s ease}
+    input:focus, select:focus, textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 2px rgba(6,247,255,0.2)}
+    textarea{min-height:120px;resize:vertical}
+
+    /* Partnership Benefits */
+    .benefits-grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));gap:18px;margin-top:18px}
+    .benefit-card{background:var(--glass);padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);text-align:center;transition:transform 0.3s ease}
+    .benefit-card:hover{transform:translateY(-5px)}
+    .benefit-icon{font-size:36px;color:var(--accent);margin-bottom:15px}
+    .benefit-title{font-family:'Orbitron',sans-serif;font-size:18px;margin:0 0 10px;color:var(--muted)}
+    .benefit-description{font-size:14px;color:rgba(223,231,235,0.7);margin:0}
+
+    /* Testimonials */
+    .testimonials-container{display:flex;gap:18px;overflow-x:auto;padding:10px 0;scrollbar-width:thin;scrollbar-color:var(--accent) transparent}
+    .testimonials-container::-webkit-scrollbar{height:6px}
+    .testimonials-container::-webkit-scrollbar-track{background:transparent}
+    .testimonials-container::-webkit-scrollbar-thumb{background:var(--accent);border-radius:3px}
+    .testimonial-card{background:var(--card);padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);min-width:300px;flex-shrink:0;transition:transform 0.3s ease}
+    .testimonial-card:hover{transform:translateY(-5px)}
+    .testimonial-text{font-style:italic;color:rgba(223,231,235,0.8);margin:0 0 15px;position:relative}
+    .testimonial-text:before{content:'"';font-size:24px;color:var(--accent);position:absolute;top:-10px;left:-5px}
+    .testimonial-author{display:flex;align-items:center;gap:10px}
+    .author-avatar{width:40px;height:40px;border-radius:50%;background:var(--glass);display:flex;align-items:center;justify-content:center;color:var(--accent)}
+    .author-info{flex:1}
+    .author-name{font-family:'Orbitron',sans-serif;font-size:14px;margin:0;color:var(--muted)}
+    .author-role{font-size:12px;color:rgba(223,231,235,0.6);margin:0}
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideIn {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* footer */
+    footer{padding:40px 0;border-top:1px solid rgba(255,255,255,0.02)}
+    .social-links{display:flex;gap:12px;margin-top:10px}
+    .social-links a{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.05);transition:all 0.3s ease}
+    .social-links a:hover{background:var(--accent);color:var(--bg)}
+
+    /* Responsive */
+    @media (max-width:1000px){
+      .form-grid{grid-template-columns:1fr}
+      .tiers-container{flex-direction:column;align-items:center}
+      .tier-card{max-width:100%}
+    }
+    @media (max-width:768px){
+      header{padding:12px 0}
+      .container{padding:24px}
+      .hero{padding:32px 0 60px}
+      section{padding:32px 0}
+      h2{font-size:36px}
+      
+      /* Mobile navigation */
+      nav{display:none;position:absolute;top:80px;left:0;right:0;background:var(--bg);flex-direction:column;padding:20px;z-index:1000;border-top:1px solid rgba(255,255,255,0.05)}
+      nav.active{display:flex}
+      .mobile-menu-btn{display:flex}
+      
+      .hero-ctas{flex-direction:column;align-items:stretch}
+    }
+    @media (max-width:600px){
+      h2{font-size:28px}
+      .partnership-grid{grid-template-columns:1fr}
+      .benefits-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div id="particles"></div>
+
+  <header class="container">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.06)"/>
+          <path d="M20 36c6-10 16-12 24-6" stroke="white" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="26" r="2.6" fill="#fff"/>
+          <circle cx="40" cy="30" r="2.2" fill="#fff"/>
+        </svg>
+      </div>
+      <div>
+        <h1>EchoFauna</h1>
+        <p>Reviving the Voices of the Extinct</p>
+      </div>
+    </div>
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="mainNav">
+      <a class="btn" href="index.html">Home</a>
+      <a class="btn" href="index.html#archive">Archive</a>
+      <a class="btn" href="index.html#stories">Stories</a>
+      <a class="btn" href="index.html#lab">AI Lab</a>
+      <a class="btn" href="partnerships.html">Partnerships</a>
+      <a class="btn cta" href="donate.html">Donate</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero" role="region" aria-label="Partnerships Hero">
+      <div class="hero-left">
+        <span class="eyebrow">COLLABORATION • IMPACT • INNOVATION</span>
+        <h2 class="glow">Partner With Us to<br>Revive Lost Species</h2>
+        <p class="lead">Join our network of scientific institutions, conservation organizations, technology partners, and community contributors working together to digitally preserve biodiversity and educate future generations.</p>
+        <div class="hero-ctas">
+          <a class="btn cta" href="#partnership-form">Become a Partner</a>
+          <a class="btn" href="#current-partners">View Current Partners</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERSHIP BENEFITS -->
+    <section id="partnership-benefits">
+      <h3 style="font-family:'Orbitron',sans-serif">Why Partner With EchoFauna?</h3>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <h4 class="benefit-title">Global Impact</h4>
+          <p class="benefit-description">Join a global initiative to preserve biodiversity and educate millions about extinct species.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-flask"></i>
+          </div>
+          <h4 class="benefit-title">Cutting-Edge Research</h4>
+          <p class="benefit-description">Access our AI reconstruction technology and contribute to groundbreaking digital conservation.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h4 class="benefit-title">Community Engagement</h4>
+          <p class="benefit-description">Connect with a passionate community of scientists, educators, and conservationists.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h4 class="benefit-title">Visibility & Recognition</h4>
+          <p class="benefit-description">Gain prominent placement across our platforms and recognition for your contribution.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRENT PARTNERS -->
+    <section id="current-partners">
+      <h3 style="font-family:'Orbitron',sans-serif">Our Valued Partners</h3>
+      <div class="partnership-grid">
+        <div class="partnership-card">
+          <div class="partner-type">Scientific Institution</div>
+          <div class="partner-logo">
+            <div style="width:100%;height:100%;background:var(--glass);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--accent);font-family:'Orbitron',sans-serif">NATURAL HISTORY MUSEUM</div>
+          </div>
+          <h4 class="partner-name">Smithsonian Institution</h4>
+          <p class="partner-description">Providing access to fossil records and scientific expertise for accurate digital reconstructions.</p>
+          <a class="btn" href="#" style="margin-top:auto;align-self:flex-start">Learn More</a>
+        </div>
+        <div class="partnership-card">
+          <div class="partner-type">Technology Partner</div>
+          <div class="partner-logo">
+            <div style="width:100%;height:100%;background:var(--glass);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--accent);font-family:'Orbitron',sans-serif">TECH CORP</div>
+          </div>
+          <h4 class="partner-name">NeuralTech AI</h4>
+          <p class="partner-description">Powering our AI reconstruction algorithms with advanced machine learning infrastructure.</p>
+          <a class="btn" href="#" style="margin-top:auto;align-self:flex-start">Learn More</a>
+        </div>
+        <div class="partnership-card">
+          <div class="partner-type">Conservation Organization</div>
+          <div class="partner-logo">
+            <div style="width:100%;height:100%;background:var(--glass);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--accent);font-family:'Orbitron',sans-serif">WWF</div>
+          </div>
+          <h4 class="partner-name">World Wildlife Fund</h4>
+          <p class="partner-description">Collaborating on educational initiatives to connect digital preservation with current conservation efforts.</p>
+          <a class="btn" href="#" style="margin-top:auto;align-self:flex-start">Learn More</a>
+        </div>
+        <div class="partnership-card">
+          <div class="partner-type">Academic Partner</div>
+          <div class="partner-logo">
+            <div style="width:100%;height:100%;background:var(--glass);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--accent);font-family:'Orbitron',sans-serif">UNIVERSITY</div>
+          </div>
+          <h4 class="partner-name">Cambridge University</h4>
+          <p class="partner-description">Contributing paleontological research and student engagement programs to our mission.</p>
+          <a class="btn" href="#" style="margin-top:auto;align-self:flex-start">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERSHIP TIERS -->
+    <section id="partnership-tiers">
+      <h3 style="font-family:'Orbitron',sans-serif">Partnership Opportunities</h3>
+      <div class="tiers-container">
+        <div class="tier-card">
+          <h4 class="tier-name">Research Partner</h4>
+          <div class="tier-price">Contribution-based</div>
+          <ul class="tier-features">
+            <li>Access to research data</li>
+            <li>Collaboration on publications</li>
+            <li>Recognition on research pages</li>
+            <li>Participation in workshops</li>
+          </ul>
+          <a class="btn" href="#partnership-form">Inquire</a>
+        </div>
+        <div class="tier-card tier-highlight">
+          <h4 class="tier-name">Technology Partner</h4>
+          <div class="tier-price">In-kind / Funding</div>
+          <ul class="tier-features">
+            <li>All Research Partner benefits</li>
+            <li>Technology showcase</li>
+            <li>Joint marketing opportunities</li>
+            <li>Early access to new features</li>
+            <li>Dedicated technical support</li>
+          </ul>
+          <a class="btn cta" href="#partnership-form">Apply Now</a>
+        </div>
+        <div class="tier-card">
+          <h4 class="tier-name">Conservation Partner</h4>
+          <div class="tier-price">Collaboration</div>
+          <ul class="tier-features">
+            <li>All Research Partner benefits</li>
+            <li>Educational content co-creation</li>
+            <li>Cross-promotion opportunities</li>
+            <li>Joint grant applications</li>
+          </ul>
+          <a class="btn" href="#partnership-form">Inquire</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <h3 style="font-family:'Orbitron',sans-serif">What Our Partners Say</h3>
+      <div class="testimonials-container">
+        <div class="testimonial-card">
+          <p class="testimonial-text">Working with EchoFauna has allowed us to bring our fossil collections to life in ways we never thought possible. Their technology is revolutionizing how we share paleontological research with the public.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <div class="author-name">Dr. Evelyn Reed</div>
+              <div class="author-role">Curator of Paleontology, Smithsonian</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">The AI reconstruction technology developed by EchoFauna represents a breakthrough in digital conservation. We're proud to support their mission to preserve biodiversity through innovation.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <div class="author-name">Marcus Chen</div>
+              <div class="author-role">CTO, NeuralTech AI</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">EchoFauna's approach connects historical extinction with current conservation challenges in a powerful way. Their educational materials have become an invaluable resource for our outreach programs.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <div class="author-name">Sarah Johnson</div>
+              <div class="author-role">Director of Education, WWF</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERSHIP FORM -->
+    <section id="partnership-form">
+      <h3 style="font-family:'Orbitron',sans-serif">Become a Partner</h3>
+      <div class="glass-card form-container">
+        <form id="partnershipForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="organization">Organization Name</label>
+              <input type="text" id="organization" name="organization" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-name">Contact Name</label>
+              <input type="text" id="contact-name" name="contact-name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="organization-type">Organization Type</label>
+              <select id="organization-type" name="organization-type" required>
+                <option value="">Select Type</option>
+                <option value="scientific">Scientific Institution</option>
+                <option value="technology">Technology Company</option>
+                <option value="conservation">Conservation Organization</option>
+                <option value="academic">Academic Institution</option>
+                <option value="corporate">Corporate Partner</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="partnership-type">Partnership Interest</label>
+              <select id="partnership-type" name="partnership-type" required>
+                <option value="">Select Interest</option>
+                <option value="research">Research Partner</option>
+                <option value="technology">Technology Partner</option>
+                <option value="conservation">Conservation Partner</option>
+                <option value="sponsorship">Sponsorship</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="message">Tell us about your organization and partnership interests</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn cta" style="margin-top:20px;width:100%">Submit Partnership Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px">
+      <div>
+        <strong>EchoFauna</strong>
+        <div style="font-size:13px;color:rgba(223,231,235,0.6)">Reviving the Voices of the Extinct</div>
+        <div class="social-links">
+          <a href="https://x.com/flevian11" aria-label="X (formerly Twitter)" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com/@flevianochoka" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://github.com/flevian11" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <a class="btn" href="partnerships.html">Partnerships</a>
+        <a class="btn" href="donate.html">Donate</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // EchoFauna Partnerships Page Script
+    document.addEventListener('DOMContentLoaded', function() {
+      
+      // =========== Mobile Menu ===========
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mainNav = document.getElementById('mainNav');
+      
+      mobileMenuBtn.addEventListener('click', function() {
+        this.classList.toggle('active');
+        mainNav.classList.toggle('active');
+      });
+
+      // =========== Particle Background ===========
+      function initParticles() {
+        const canvas = document.createElement('canvas');
+        canvas.id = 'pCanvas';
+        const root = document.getElementById('particles');
+        root.appendChild(canvas);
+        const ctx = canvas.getContext('2d');
+        let w, h, dpr;
+        const particles = [];
+        
+        function resize(){
+          dpr = Math.min(2, window.devicePixelRatio || 1); 
+          w = canvas.width = Math.floor(window.innerWidth * dpr); 
+          h = canvas.height = Math.floor(window.innerHeight * dpr); 
+          canvas.style.width = window.innerWidth + 'px'; 
+          canvas.style.height = window.innerHeight + 'px'; 
+          ctx.scale(dpr, dpr);
+        }
+        
+        window.addEventListener('resize', resize); 
+        resize();
+        
+        for(let i = 0; i < 150; i++){
+          particles.push({
+            x: Math.random() * window.innerWidth,
+            y: Math.random() * window.innerHeight, 
+            vx: (Math.random() - 0.5) * 0.3, 
+            vy: (Math.random() - 0.5) * 0.3, 
+            r: Math.random() * 3 + 0.5, 
+            alpha: Math.random() * 0.7 + 0.3,
+            color: Math.random() > 0.5 ? 'rgba(6,247,255,' : 'rgba(169,255,51,'
+          });
+        }
+        
+        function tick(){
+          ctx.clearRect(0, 0, window.innerWidth, window.innerHeight); 
+          
+          ctx.strokeStyle = 'rgba(6,247,255,0.03)';
+          ctx.lineWidth = 0.5;
+          
+          for(let i = 0; i < particles.length; i++){
+            for(let j = i + 1; j < particles.length; j++){
+              const dx = particles[i].x - particles[j].x;
+              const dy = particles[i].y - particles[j].y;
+              const distance = Math.sqrt(dx * dx + dy * dy);
+              
+              if(distance < 100){
+                ctx.beginPath();
+                ctx.moveTo(particles[i].x, particles[i].y);
+                ctx.lineTo(particles[j].x, particles[j].y);
+                ctx.stroke();
+              }
+            }
+          }
+          
+          for(let p of particles){
+            p.x += p.vx; 
+            p.y += p.vy; 
+            
+            if(p.x < -10) p.x = window.innerWidth + 10; 
+            if(p.x > window.innerWidth + 10) p.x = -10; 
+            if(p.y < -10) p.y = window.innerHeight + 10; 
+            if(p.y > window.innerHeight + 10) p.y = -10; 
+            
+            ctx.beginPath(); 
+            ctx.fillStyle = p.color + (p.alpha * 0.1) + ')'; 
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); 
+            ctx.fill();
+          } 
+          
+          requestAnimationFrame(tick);
+        }
+        
+        tick();
+      }
+      initParticles();
+
+      // =========== Partnership Form Handling ===========
+      const partnershipForm = document.getElementById('partnershipForm');
+      
+      partnershipForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(partnershipForm);
+        const data = Object.fromEntries(formData);
+        
+        // In a real application, you would send this data to your server
+        console.log('Partnership form submitted:', data);
+        
+        // Show success message
+        alert('Thank you for your partnership inquiry! We will contact you shortly.');
+        
+        // Reset form
+        partnershipForm.reset();
+      });
+
+      // =========== Smooth Scrolling for Navigation ===========
+      function initSmoothScrolling() {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+              target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          });
+        });
+      }
+      initSmoothScrolling();
+
+      // =========== Intersection Observer for Animations ===========
+      function initScrollAnimations() {
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.style.animation = `fadeIn 1s ease forwards`;
+            }
+          });
+        }, observerOptions);
+        
+        document.querySelectorAll('section').forEach(section => {
+          observer.observe(section);
+        });
+      }
+      initScrollAnimations();
+
+      // =========== Enhanced Card Hover Effects ===========
+      function initCardHoverEffects() {
+        const cards = document.querySelectorAll('.partnership-card, .tier-card, .benefit-card, .testimonial-card');
+        
+        cards.forEach(card => {
+          card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+          });
+          
+          card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+          });
+        });
+      }
+      initCardHoverEffects();
+    });
+  </script>
+</body>
+</html>

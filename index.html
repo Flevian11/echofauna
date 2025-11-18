@@ -70,6 +70,94 @@
   <link rel="canonical" href="https://echofauna.com" />
   <style>
     /* =========== Base / Reset =========== */
+
+    /* =========== Fix Horizontal Overflow =========== */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Ensure all sections don't exceed viewport */
+section {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Fix for specific elements that might cause overflow */
+.hero, .glass-card, .carousel, .masonry, .lab, .form-grid {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Additional mobile-specific fixes */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px !important;
+    }
+    
+    /* Ensure images don't cause overflow */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Fix for hero section */
+    .hero {
+        padding: 30px 0 50px !important;
+    }
+    
+    /* Fix for cards and grids */
+    .carousel, .masonry, .partnership-grid, .benefits-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+    
+    /* Fix for form elements */
+    input, select, textarea {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    /* Fix for story container */
+    .story-container {
+        height: auto !important;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 10px !important;
+    }
+    
+    /* Further reduce padding on very small screens */
+    .glass-card, .card, .partnership-card {
+        padding: 15px !important;
+    }
+    
+    /* Adjust font sizes for very small screens */
+    h2 {
+        font-size: 24px !important;
+        line-height: 1.1 !important;
+    }
+    
+    .hero {
+        padding: 20px 0 40px !important;
+    }
+}
     :root{
       --bg:#0b0f14; /* dark slate */
       --card:#0f1720;
@@ -94,9 +182,6 @@
       color:var(--muted);
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
-      overflow-x:hidden;
-    }
-    body{
       overflow-x:hidden;
     }
     a{color:inherit;text-decoration:none}
@@ -1432,4 +1517,3 @@ document.addEventListener('DOMContentLoaded', function() {
   </script>
 </body>
 </html>
-
